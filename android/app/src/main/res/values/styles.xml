@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema base: cores da capa do livro. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/bookRed</item>
+        <item name="colorPrimaryDark">@color/bookRedDark</item>
+        <item name="colorAccent">@color/bookGold</item>
+        <item name="android:windowBackground">@color/bookCream</item>
+    </style>
+
+    <!-- Tema usado pelo WebView depois da splash screen. -->
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@color/bookCream</item>
+        <item name="colorPrimary">@color/bookRed</item>
+        <item name="colorPrimaryDark">@color/bookRedDark</item>
+        <item name="colorAccent">@color/bookGold</item>
+
+        <!-- Em Android 14 e anteriores as barras usam estas cores; no 15+ o
+             conteúdo vai de ponta a ponta e o Capacitor ajusta os ícones. -->
+        <item name="android:statusBarColor">@color/bookRedDark</item>
+        <item name="android:navigationBarColor">@color/bookCream</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o">true</item>
+
+        <!-- O app tem temas próprios (Papel/Claro/Escuro): o Android não deve
+             inverter as cores do WebView por conta do modo escuro do sistema. -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="AppTheme.NoActionBarLaunch" parent="Theme.SplashScreen">
+        <item name="android:background">@drawable/splash</item>
+    </style>
+</resources>

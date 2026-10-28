@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta do livro, usada pelo tema nativo e pela splash screen. -->
+    <color name="bookRed">#8E1118</color>
+    <color name="bookRedDark">#6D0B12</color>
+    <color name="bookRedDeep">#5B090E</color>
+    <color name="bookGold">#B58A2B</color>
+    <color name="bookCream">#F7F0E2</color>
+</resources>

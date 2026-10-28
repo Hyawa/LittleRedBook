@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#8e1118" />
+    <meta name="color-scheme" content="light" />
+    <title>Citações — Livro Vermelho</title>
+    <meta
+      name="description"
+      content="As 427 citações do Presidente Mao Zedong, em português, organizadas em 33 seções. Leitura integral e busca disponíveis offline."
+    />
+    <meta name="application-name" content="Citações" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Citações" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta property="og:title" content="Citações — Livro Vermelho" />
+    <meta
+      property="og:description"
+      content="As 427 citações do Presidente Mao Zedong, em português, para ler offline."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <script>
+      // Aplica o tema guardado antes da primeira pintura.
+      try {
+        var raw = localStorage.getItem('citacoes:settings:v1')
+        if (raw) {
+          var settings = JSON.parse(raw)
+          var root = document.documentElement
+          if (settings.theme === 'dark') root.classList.add('dark')
+          if (settings.theme) root.dataset.theme = settings.theme
+          if (typeof settings.fontSize === 'number') {
+            root.style.setProperty('--reader-size', settings.fontSize + 'px')
+          }
+          if (settings.theme === 'dark') {
+            var meta = document.querySelector('meta[name="theme-color"]')
+            if (meta) meta.setAttribute('content', '#16110f')
+          }
+        }
+      } catch (error) {
+        /* preferências indisponíveis */
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      Este aplicativo precisa de JavaScript para mostrar as citações.
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

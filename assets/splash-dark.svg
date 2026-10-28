@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2732" height="2732" viewBox="0 0 2732 2732">
+  <defs>
+    <radialGradient id="light" cx="0.5" cy="0.36" r="0.62">
+      <stop offset="0" stop-color="#d9b45b" stop-opacity="0.14"/>
+      <stop offset="0.55" stop-color="#d9b45b" stop-opacity="0.03"/>
+      <stop offset="1" stop-color="#d9b45b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8e8bb"/>
+      <stop offset="0.45" stop-color="#ecd39a"/>
+      <stop offset="1" stop-color="#c49a3d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="2732" height="2732" fill="#16110f"/>
+  <rect width="2732" height="2732" fill="url(#light)"/>
+  <rect x="96" y="96" width="2540" height="2540" fill="none" stroke="#d9b45b" stroke-opacity="0.2" stroke-width="6"/>
+  <rect x="120" y="120" width="2492" height="2492" fill="none" stroke="#d9b45b" stroke-opacity="0.08" stroke-width="2"/>
+
+  <circle cx="1366" cy="1220" r="440" fill="none" stroke="#d9b45b" stroke-opacity="0.32" stroke-width="8"/>
+  <circle cx="1366" cy="1220" r="404" fill="none" stroke="#d9b45b" stroke-opacity="0.14" stroke-width="3"/>
+
+  <g transform="translate(1366 1220)">
+    <path d="M0-320 L75.3-103.5 L304-98.9 L121.6 39.5 L188.2 258.9 L0 128 L-188.2 258.9 L-121.6 39.5 L-304-98.9 L-75.3-103.5 Z"
+      fill="url(#gold)" stroke="url(#gold)" stroke-width="12" stroke-linejoin="round"/>
+  </g>
+
+  <g stroke="#d9b45b" stroke-opacity="0.4" stroke-width="4">
+    <line x1="1046" y1="1880" x2="1290" y2="1880"/>
+    <line x1="1442" y1="1880" x2="1686" y2="1880"/>
+  </g>
+  <g transform="translate(1366 1880)">
+    <path d="M0-22 L5.2-7.2 L21-6.9 L8.4 2.7 L13 17.9 L0 8.8 L-13 17.9 L-8.4 2.7 L-21-6.9 L-5.2-7.2 Z" fill="#d9b45b"/>
+  </g>
+</svg>

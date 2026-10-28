@@ -1,0 +1,10 @@
+packages:
+  - '.'
+
+# @capacitor/assets fixa sharp 0.32.6, que não tem binário para Node 24.
+# A versão 0.35.5 é compatível com as operações usadas pelo gerador.
+overrides:
+  sharp: '0.35.5'
+
+onlyBuiltDependencies:
+  - sharp
